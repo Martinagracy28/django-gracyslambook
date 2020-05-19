@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static '/css/home.css' %}">
+	<title>gracyslambook</title>
+</head>
+<body >
+<div class="hi">
+	
+	 <form method="POST" action="slambook" enctype="multipart/form-data" >
+	{% csrf_token %}
+		<h1 class="text-center text-dark"><u><i>Welcome {{name}}</i></u></h1>
+		<div class="second container">
+		<ol>
+			<li>what is your name?
+				<input type="text" name="name" id="name"></li>
+			<li>what i am to you?<input type="text" name="relationship" id="relationship"></li>
+			<li>what is the nick name for me?<input type="text" name="nick_name" id="nick_name"></li>
+			<li>what is the best memorable moment with me?upload it..<input type="file" name="image" id="image"></li>
+			<li>something you liked in me?<input type="text" name="like" id="like"></li>
+			<li>something you hated in me?<input type="text" name="dislike" id="dislike"></li>
+			<li>which video you want to dedicate me?upload it..<input type="file" name="video" id="video"></li>
+			<li>If you want to give some gift to me ,what is that gift<input type="text" name="gift" id="gift"></li>
+			<li>today is the last day of my life,what will be your last word for me?<input type="text" name="last_word" id="last_word"></li>
+			<li>A message for me<input type="text" name="message" id="message"></li>
+		<input type="submit" name="submit" value="sumbit">
+
+</ol>
+</div>
+	</form>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </div>
+</body>
+</html>

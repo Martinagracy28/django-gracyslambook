@@ -1,0 +1,38 @@
+.jumbotron{
+	background-image: url('../image/friend.jpg');
+	background-size: cover;
+    background-repeat: no-repeat;
+	text-transform: capitalize;
+	width: 100%;
+	text-align: right;
+	height: 200vh;
+	background-size: 100%;
+}
+.text{
+	text-align: center;
+	padding-top: 0;
+	text-decoration-style: all;
+}
+.second{
+	background-color: pink;
+	height: 85vh;
+	text-transform: capitalize;
+	text-shadow: 1px 1px;
+}
+.hi{
+	background-color:#ff9999;
+	height: 100vh;
+	color:black;
+
+}
+
+.img{
+	background-image: url('../image/thank.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 125vh;
+	width: 100%;
+	background-size: 100%;
+	background-position: center;
+	
+}
