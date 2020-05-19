@@ -25,7 +25,7 @@ SECRET_KEY = 'j!302d2084-(t4j2!a9az^(nwh5kp^$=mir=%8sl3*@d5&bi38'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['gracyslambook.herokuapp.com','localhost']
+ALLOWED_HOSTS = ['martinaslambook.herokuapp.com','localhost']
 
 
 # Application definition
