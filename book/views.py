@@ -30,8 +30,7 @@ def slambook(request):
         s.save()
         print("saved")
         return redirect("thank")
-    else:
-        return render(request,"slambook.html")
+    
         
 def thank(request):
 	return render(request,'thank.html')
