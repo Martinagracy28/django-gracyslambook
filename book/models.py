@@ -12,7 +12,7 @@ class Slam(models.Model):
 	gift = models.CharField(max_length=266)
 	last_word= models.CharField(max_length=266)
 	image = models.ImageField(upload_to="pics",null = False)
-	video = models.FileField(upload_to='videos/',null= True,verbose_name = " ")
+	video = models.FileField(upload_to='videos',null= True)
 
 	def __str__(self):
 		return self.name
